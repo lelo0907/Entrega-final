@@ -1,7 +1,12 @@
+# Proyecto Alura Latam - Encriptador/Desencriptador de Texto
 
-### Pasos a seguir:
-1. **Reemplaza** `"tu-usuario/tu-repositorio"` con el nombre de tu usuario y repositorio en GitHub.
-2. **Personaliza** el README según tus necesidades específicas, por ejemplo, añadiendo más detalles sobre la lógica backend si es necesario.
-3. **Guarda el archivo** como `README.md` en la raíz de tu repositorio.
+Este proyecto es una aplicación web simple que permite a los usuarios encriptar y desencriptar texto utilizando un conjunto de reglas específicas. El propósito principal de este proyecto es proporcionar una herramienta fácil de usar para encriptar mensajes de texto de manera básica y, a su vez, practicar el desarrollo frontend con HTML, CSS y JavaScript, integrando un backend en Java.
 
-Este README proporciona una descripción clara y útil de tu proyecto para otros desarrolladores o usuarios que puedan estar interesados en él. ¡Espero que te sea útil!
+## Funcionalidades
+
+- **Encriptar texto**: Convierte las letras en un formato codificado según las siguientes reglas:
+  - La letra "e" se convierte en "enter".
+  - La letra "i" se convierte en "imes".
+  - La letra "a" se convierte en "ai".
+  - La letra "o" se convierte en "ober".
+  - La letra "u" se convierte en "ufat".
