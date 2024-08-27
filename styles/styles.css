@@ -1,0 +1,226 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.arriba {
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content:center;
+}
+
+.subti {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content:center;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    line-height: 1.6;
+    padding: 25px;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    margin: 7%;
+    max-width: 1200px;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #D8DFE8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.entrada {
+    flex: 0 0 70%;
+    padding-right: 20px;
+    background-color: #D8DFE8;
+}
+
+.resultado {
+    flex: 0 0 30%;
+    background-color: #D8DFE8;
+}
+
+
+textarea {
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: none;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+}
+
+
+textarea::placeholder {
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+}
+
+
+textarea[readonly] {
+    background-color: #ffffff;
+    color: #0A3871;
+    border: 3px solid #ccc;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+    background-image: url('../images/1.png'); /* Ruta a tu imagen */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área del textarea */
+    padding: 50px;
+}
+
+
+textarea[readonly]:not(:placeholder-shown) {
+    background-image: none;
+}
+
+
+
+
+textarea:invalid {
+    border: 2px solid red;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.Advertencia {
+    color: #141313;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    font-size: 15px;
+}
+
+
+#encriptar {
+    background-color: #0A3871;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#encriptar:hover {
+    background-color: #082a51;
+}
+
+
+#desencriptar {
+    background-color: white;
+    color: #0A3871;
+    padding: 10px 20px;
+    border: 2px solid #0A3871;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#desencriptar:hover {
+    background-color: #f0f0f0;
+}
+
+#copiarTexto {
+    background-color: #0A3871;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px; 
+}
+
+#copiarTexto:hover {
+    background-color: #082a51;
+}
+
+
+#limpiar {
+    background-color: #f0f0f0; 
+    color: #0A3871; 
+    padding: 10px 20px;
+    border: 2px solid #0A3871;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px; 
+}
+
+#limpiar:hover {
+    background-color: #e0e0e0; 
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0A3871;
+    color: white;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        padding: 20px;
+        margin: 5%;
+    }
+
+    .entrada, .resultado {
+        flex: 1 1 100%; 
+        margin-bottom: 20px; 
+    }
+
+    textarea {
+        height: 300px; 
+    }
+
+    .botones {
+        justify-content: center; 
+        flex-wrap: wrap; 
+    }
+
+    #encriptar, #desencriptar, #limpiar, #copiarTexto {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+}
